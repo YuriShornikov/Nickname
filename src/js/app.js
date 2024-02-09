@@ -4,7 +4,7 @@ export default class Validator {
         const usernameRegex = /^(?![_-])[\w-]*[a-zA-Z]+[\w-]*$/;
         const digitsRegex = /\d{4,}/;
 
-        // Проверяем на не соответствие
+        // Проверяем на несоответствие
         if (digitsRegex.test(username) || !usernameRegex.test(username)) {
             return false;
         }
